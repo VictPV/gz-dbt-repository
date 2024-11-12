@@ -1,6 +1,6 @@
 SELECT
-DISTINCT (orders_id) AS orders,
-date_date AS date,
+DISTINCT (orders_id) AS orders_id,
+date_date AS date_date,
 ROUND(SUM (revenue),2) AS turnover,
 ROUND(SUM(quantity),2) AS quantity,
 ROUND(SUM(purchase_cost),2) AS purchase_cost,
