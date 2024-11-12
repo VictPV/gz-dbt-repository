@@ -8,12 +8,14 @@ sources:
         identifier: raw_gz_sales
         description: table des données sur les ventes de Greenweez / chaque ligne de product_id corresp à orders_id
         columns:
+          - name: Pkey
+            description: primary key with concat of orders_id and products_id
           - name: date_date
             description: date of purchase
           - name: orders_id
-            description: primary key of unique sold identifier
+            description: unique sold identifier
           - name: products_id
-            description: primary key of products
+            description: products identifier
           - name: revenue
             description: price per product sold
           - name: quantity
