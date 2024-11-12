@@ -9,6 +9,7 @@ source as (
 renamed as (
 
     select
+        CONCAT(CAST(orders_id AS STRING),"_",CAST(pdt_id AS STRING)) AS Pkey,
         date_date,
         orders_id,
         pdt_id AS products_id,
