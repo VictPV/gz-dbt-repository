@@ -49,12 +49,72 @@ sources:
       - name: adwords
         identifier: raw_gz_adwords
         description: table of adwords pub 
+        columns:
+          - name: date_date
+            description: date 
+          - name: paid_source
+            description: name of the ads compagny 
+          - name: campaign_key
+            description: key of the campaign
+          - name: campaign_name
+            description: name of the ads campaign
+          - name: ads_cost
+            description: price of the advertising campaign
+          - name: impression
+            description: number of impressions 
+          - name: click
+            description: number of clicks
       - name: bing
         identifier: raw_gz_bing
         description: table of bing pub 
+        columns:
+          - name: date_date
+            description: date 
+          - name: paid_source
+            description: name of the ads compagny 
+          - name: campaign_key
+            description: key of the campaign
+          - name: campaign_name
+            description: name of the ads campaign
+          - name: ads_cost
+            description: price of the advertising campaign
+          - name: impression
+            description: number of impressions 
+          - name: click
+            description: number of clicks
       - name: criteo
         identifier: raw_gz_criteo
         description: table of criteo pub 
+        columns:
+          - name: date_date
+            description: date 
+          - name: paid_source
+            description: name of the ads compagny 
+          - name: campaign_key
+            description: key of the campaign
+          - name: campaign_name
+            description: name of the ads campaign
+          - name: ads_cost
+            description: price of the advertising campaign
+          - name: impression
+            description: number of impressions 
+          - name: click
+            description: number of clicks
       - name: facebook
         identifier: raw_gz_facebook
         description: table of facebook pub
+        columns:
+          - name: date_date
+            description: date 
+          - name: paid_source
+            description: name of the ads compagny 
+          - name: campaign_key
+            description: key of the campaign
+          - name: campaign_name
+            description: name of the ads campaign
+          - name: ads_cost
+            description: price of the advertising campaign
+          - name: impression
+            description: number of impressions 
+          - name: click
+            description: number of clicks
