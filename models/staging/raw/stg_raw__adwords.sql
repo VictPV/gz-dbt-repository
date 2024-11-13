@@ -9,7 +9,8 @@ source as (
 renamed as (
 
     select
-        date_date,
+        cast(date_date as STRING) AS date_date,
+        concat(date_date,"_",campaign_key) AS pk,
         paid_source,
         campaign_key,
         campgn_name AS campaign_name,
@@ -22,3 +23,4 @@ renamed as (
 )
 
 select * from renamed
+

@@ -64,6 +64,9 @@ sources:
             description: number of impressions 
           - name: click
             description: number of clicks
+        tests:
+          - unique:
+              column_name: "(date_date || '-' || campaign_key)"
       - name: bing
         identifier: raw_gz_bing
         description: table of bing pub 
@@ -82,6 +85,9 @@ sources:
             description: number of impressions 
           - name: click
             description: number of clicks
+        tests:
+          - unique:
+              column_name: "(date_date || '-' || campaign_key)"
       - name: criteo
         identifier: raw_gz_criteo
         description: table of criteo pub 
@@ -100,6 +106,9 @@ sources:
             description: number of impressions 
           - name: click
             description: number of clicks
+        tests:
+          - unique:
+              column_name: "(date_date || '-' || campaign_key)"
       - name: facebook
         identifier: raw_gz_facebook
         description: table of facebook pub
@@ -118,3 +127,10 @@ sources:
             description: number of impressions 
           - name: click
             description: number of clicks
+        tests:
+          - unique:
+              column_name: "(date_date || '-' || campaign_key)"
+        
+          
+
+
